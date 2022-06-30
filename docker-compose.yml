@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+ backend:
+   build: .
+   container_name: be
+   image: pinoezz/housy-be:stable
+   stdin_open: true
+   ports:
+    - 5051:5000
